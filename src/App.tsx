@@ -1,14 +1,11 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Bad } from './principles/SOLID/SRP/Bad';
+
 function App() {
   return (
-    <div>
-      <header>
-        <h1>Software Engineering Principles with ReactJS</h1>
-
-        <div>
-          <h2>SOLID</h2>
-        </div>
-      </header>
-    </div>
+    <>
+      <Bad />
+    </>
   );
 }
 
