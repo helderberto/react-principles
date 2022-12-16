@@ -4,7 +4,7 @@ SOLID is a list of 5 software engineering principles. It is a meta acronym where
 
 Let's dive in into each acronym:
 
-- S - SRP (Single Responsability Principle)
+- [S - SRP (Single Responsability Principle)](./SRP/README.md)
 - O - OCP (Open Closed Principle)
 - L - LSP (Liskov Substitution Principle)
 - I - ISP (Interface Segregation Principle)

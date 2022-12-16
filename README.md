@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [SOLID](./src/principles/solid/README.md)
+- [SOLID](./src/principles/SOLID/README.md)
 
 ## Contributing
 
