@@ -1,10 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Bad } from './principles/SOLID/SRP/Bad';
+import { SRP } from './principles/SOLID/SRP';
 
 function App() {
   return (
     <>
-      <Bad />
+      <SRP />
     </>
   );
 }

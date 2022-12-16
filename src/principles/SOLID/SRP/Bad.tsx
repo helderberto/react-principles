@@ -1,21 +1,26 @@
-import { useEffect, useMemo, useState } from "react";
-import axios from "axios";
+import { useEffect, useMemo, useState } from 'react';
+import axios from 'axios';
 
 export const Bad = () => {
   const [characters, setCharacters] = useState<any>([]);
 
   const fetchCharacters = async () => {
-    const response = await axios.get('https://rickandmortyapi.com/api/character')
+    const response = await axios.get(
+      'https://rickandmortyapi.com/api/character'
+    );
     if (response && response.data) {
       setCharacters(response.data.results);
     }
-  }
+  };
 
   useEffect(() => {
     fetchCharacters();
   }, []);
 
-  const filteredHumans = useMemo(() => characters.filter((character: any) => character.species === 'Human'), [characters]);
+  const filteredHumans = useMemo(
+    () => characters.filter((character: any) => character.species === 'Human'),
+    [characters]
+  );
 
   return (
     <div className="container">
@@ -46,4 +51,4 @@ export const Bad = () => {
       </div>
     </div>
   );
-}
+};
